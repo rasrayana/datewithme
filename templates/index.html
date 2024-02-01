@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Ты не сможешь выбрать Нет</title>
+</head>
+<body>
+    <div id="container">
+        <p id="invitation">Приглашаю тебя на свидание!</p>
+        <img id="invitation-gif" src="{{ url_for('static', filename='4650204756cca63e0c50a7e0435449ea.gif') }}" alt="Invitation GIF">
+        <button id="yes-button" onclick="showResult('Да')">Да</button>
+        <button id="no-button">Нет</button>
+        <p id="result">У тебя не было другого выбора	( ´ ∀ `)ノ～ ♡, место встречи: <span id="location"></span></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
